@@ -1,43 +1,92 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Gradients</title>
     <style>
         #alfa {
             background-color: yellow;
         }
-        #beta{
-            background-image:url(image.png) ;
+
+        #beta {
+            background-image: url(image.png);
 
         }
-        #gamma{
+
+        #gamma {
             background-color: red;
-            background-image: linear-gradient(to right,red,yellow);
+            background-image: linear-gradient(to right, red, yellow);
         }
-        #omega{
+
+        #omega {
             background-image: url(pattern.png);
         }
-        #delta{
-            background-image:url(image.png);
+
+        #delta {
+            background-image: url(image.png);
         }
 
+        .border {
+            border: 2px black;
+            /* opacity: 0.5; */
+            padding:30px;
+            box-shadow: 2px 2px 2px 2px #888;
+            
+        }
+        #content{
+            opacity: 0.5;
+        }
 
-
+        #font {
+            color: black;
+            font-family: Monospace
+            ;
+        }
+        #head{
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: underline;
+        }
     </style>
 
 </head>
+
 <body>
-    <div id="alfa"><h1>Background Color</h1></div>
-    <div id="beta"><h1>Background Color</h1></div>
-    <div id="gamma"><h1>Background Color</h1></div>
-    <div id="omega"><h1>Background Color</h1></div>
-    <div id="delta"><h1>Background Position</h1></div>
-    <br>
+    <div id="alfa">
+        <h1>Background Color</h1>
+    </div>
+    <div id="beta">
+        <h1>Background Color</h1>
+    </div>
+    <div id="gamma">
+        <h1>Background Color</h1>
+    </div>
+    <div id="omega">
+        <h1>Background Color</h1>
+    </div>
+    <div id="delta">
+        <h1>Background Position</h1>
+    </div>
 
 
 
-    <div>
-        <div><h1>Introduction to CSS</h1></div>
+
+    <div class="border">
+        <div>
+            <h1 id="head">Introduction to CSS</h1>
+        </div>
+        <div id="content">
+            <p>Instructor: John Smith</p>
+            <p>Duration: 4 Weeks</p>
+            <p>Level: Beginner</p>
+            <p id="font">This course provides an introduction to CSS,covering basic syntax, selectirs, and styling properties.</p>
+
+
+        </div>
+
+
+
+
     </div>
 </body>
+
 </html>
